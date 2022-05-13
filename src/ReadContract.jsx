@@ -4,6 +4,7 @@ import TotalSupply from "./contracts/components/ReadContracts/TotalSupply";
 import TokenName from "./contracts/components/ReadContracts/TokenName";
 import TokenBalanceOf from "./contracts/components/ReadContracts/TokenBalanceOf";
 import TokenAllowance from "./contracts/components/ReadContracts/TokenAllowance";
+import TokenSymbol from './contracts/components/ReadContracts/TokenSymbol';
 let web3;
 
 const ReadContract = () => {
@@ -27,6 +28,7 @@ const ReadContract = () => {
             <h3 className="text-center my-3">Your Ethereum account is {account}</h3>
             <TotalSupply web3={web3} /><br />
             <TokenName web3={web3} /><br />
+            <TokenSymbol web3={web3} /><br />
             <TokenBalanceOf web3={web3} /><br />
             <TokenAllowance web3={web3} />
         </div>}
